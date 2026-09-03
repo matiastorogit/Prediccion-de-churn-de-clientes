@@ -23,9 +23,9 @@ graph TD
         style S1 fill:#d5f5e3,stroke:#2e7d32,stroke-width:2px
         T1["Carga y Preprocesamiento Inicial"]:::titleBox
         A1["Carga de datos: Telco Customer Churn<br/>(7.043 filas, 21 columnas)"]
-        A2["Chequeo de duplicados<br/>(fila completa y por customerID)"]
+        A2["Revisión de duplicados<br/>(fila completa y por customerID)"]
         A3["Corrección de TotalCharges<br/>(strings vacíos → 0, ligado a tenure = 0)"]
-        A4["Conversión de tipos<br/>(TotalCharges a float, SeniorCitizen a booleano)"]
+        A4["Conversión de tipos en variables<br/>(TotalCharges a float, SeniorCitizen a booleano)"]
         A1 --> A2 --> A3 --> A4
         T1 ~~~ A1
     end
