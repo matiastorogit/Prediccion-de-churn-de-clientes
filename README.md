@@ -1,10 +1,10 @@
 ## Sobre el proyecto
-Este proyecto predice la cancelación de clientes (**Churn**) para NexoTel, una empresa de telecomunicaciones, a partir del dataset Telco Customer Churn (`WA_Fn-UseC_-Telco-Customer-Churn.csv`, 7.043 clientes). Se hace clustering de la base de clientes para entender perfiles del mercado y por qué y quienes se van. Con esto se logra elegir medidas a priorizar en las campañas de retención.
+En este proyecto predigo la cancelación de clientes (**Churn**) para NexoTel, una empresa de telecomunicaciones, a partir del dataset Telco Customer Churn (`WA_Fn-UseC_-Telco-Customer-Churn.csv`, 7.043 clientes). Hice clustering de la base de clientes para entender perfiles del mercado y por qué y quienes se van. Con esto se logra elegir medidas a priorizar en las campañas de retención.
 
-Cada decisión dentro del proyecto está respaldada por un análisis estadístico o una validación empírica.
+Cada decisión dentro del proyecto la respaldé por un análisis estadístico o una validación empírica.
 
 ### Puntos claves del proyecto
-- **Ddata leakage**: separación train/test antes de ajustar escalador (`StandardScaler`), evitando data leakage
+- **Data leakage**: separación train/test antes de ajustar escalador (`StandardScaler`), evitando data leakage
 - **Feature engineering**: detección y colapso de categorías redundantes ("No internet service" duplicando `InternetService`), codificación binaria y One-Hot Encoding según cada variable.
 - **EDA basado en hipótesis**: encontré patrones en los datos y los validé con gráficos y análisis estadísitcos. 
 - **Selección de modelo**: comparación entre Regresión Logística y SVM (kernel RBF). Prioricé el que entregaba menos falsos negativos debido a necesidades de NexoTel.
